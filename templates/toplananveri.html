@@ -1,0 +1,31 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+
+
+<div class="container">
+	
+	<div class="jumbotron" style="background-color: blue">
+
+		<h2 style="color: white " >Yorum Sonuçları</h2>
+		<p style="color: white">Bootstrap ve Flask ile Makine Öğrenmesi Uygulaması</p>
+		
+	</div> 
+
+	<div>
+		
+		{% print(kategori) %}
+
+	</div>
+
+	
+
+</div>
+
+
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" 
+	  href="{{url_for('.static',filename='css/styles.css')}}">
+{% endblock %}

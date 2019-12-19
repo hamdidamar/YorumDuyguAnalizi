@@ -1,0 +1,35 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+
+<h2>Divan-ı Lügatit Kod Ekibi E2EAI19 Hackathon Projesidir</h2>
+<p style="color: green" >MCBÜ Yazılım Mühendisliği 19/12/2019 tarihli Hackathon'da yapılan Yorumlar üzerinden tahmin yapma uygulamasıdır.Model eğitiminde hepsiburada.com'un ürün yorumları kullanılmıştır.</p> 
+
+<div class="container">
+	
+	<div class="jumbotron" style="background-color: blue">
+
+		<h2 style="color: white " >Yorum Tahmin Yapma Uygulaması</h2>
+		<p style="color: white">Bootstrap ve Flask ile Makine Öğrenmesi Uygulaması</p>
+		
+	</div>
+
+	<div class="">
+		<form method="POST" action="{{ url_for('predict')}}">
+			<label>Yorumunuzu Giriniz</label><br>
+			<input type="text" name="yorum"><br><br>
+			<div>
+			<button type="submit" class="btn btn-primary">Tahmin Yap</button>
+			</div>
+
+		</form>
+	</div>
+
+</div>
+
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" 
+	  href="{{url_for('.static',filename='css/styles.css')}}">
+{% endblock %}
