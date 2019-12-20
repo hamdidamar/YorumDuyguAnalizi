@@ -31,8 +31,6 @@ Click==7.0
 cloudpickle==0.5.5
 colorama==0.3.9
 comtypes==1.1.7
-conda==4.5.11
-conda-build==3.15.1
 confuse==1.0.0
 constantly==15.1.0
 contextlib2==0.5.5
