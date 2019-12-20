@@ -88,7 +88,6 @@ lxml==4.2.5
 MarkupSafe==1.0
 matplotlib==2.2.3
 mccabe==0.6.1
-menuinst==1.4.14
 missingno==0.4.2
 mistune==0.8.3
 mkl-fft==1.0.4
