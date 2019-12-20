@@ -90,8 +90,6 @@ matplotlib==2.2.3
 mccabe==0.6.1
 missingno==0.4.2
 mistune==0.8.3
-mkl-fft==1.0.4
-mkl-random==1.0.1
 more-itertools==4.3.0
 mpmath==1.0.0
 msgpack==0.5.6
