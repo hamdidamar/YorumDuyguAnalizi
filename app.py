@@ -6,6 +6,8 @@ from sklearn.externals import joblib
 import json
 import model_egitim as m
 from sklearn.feature_extraction.text import CountVectorizer
+import os
+
 
 vocabulary = joblib.load('models/feature_list.pkl')
 vect = CountVectorizer(encoding ='utf8',vocabulary = vocabulary)
@@ -39,6 +41,7 @@ def predict():
 
 
 
+port = int(os.environ.get('PORT', 5000))
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(host='0.0.0.0', port=port,debug=True)
